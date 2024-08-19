@@ -1,4 +1,5 @@
 Task List Manager
+
 Descrição
 Este projeto é uma aplicação simples de gerenciamento de tarefas construída com React. O usuário pode adicionar tarefas, marcar como concluídas ou incompletas, e filtrar para ver apenas as tarefas concluídas ou todas as tarefas.
 
