@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+Task List Manager
+Descrição
+Este projeto é uma aplicação simples de gerenciamento de tarefas construída com React. O usuário pode adicionar tarefas, marcar como concluídas ou incompletas, e filtrar para ver apenas as tarefas concluídas ou todas as tarefas.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Funcionalidades
+Adicionar Tarefas: Permite adicionar novas tarefas à lista.
+Marcar Tarefas como Concluídas/Incompletas: Cada tarefa possui um botão para alternar seu estado entre concluída e incompleta.
+Filtrar Tarefas: Um botão permite alternar entre exibir todas as tarefas ou apenas as tarefas concluídas.
+Componentes
+TaskList
+Este é o componente principal da aplicação. Ele gerencia o estado das tarefas e a interface do usuário.
 
-## Available Scripts
+Estados
+tasks: Array de objetos que representa as tarefas. Cada tarefa tem um nome (name) e um estado de conclusão (completed).
+taskName: String que armazena o nome da tarefa que está sendo criada.
+filterCompleted: Boolean que indica se apenas tarefas concluídas devem ser exibidas.
+Funções
+addTask: Adiciona uma nova tarefa à lista de tarefas.
+toggleTaskCompletion: Alterna o estado de uma tarefa entre concluída e incompleta.
+filteredTasks: Filtra as tarefas com base no estado de filterCompleted.
+Ícones
+A aplicação utiliza a biblioteca React Icons para adicionar ícones intuitivos aos botões de ação:
 
-In the project directory, you can run:
+FaCheck: Ícone de check utilizado para marcar uma tarefa como concluída.
+FaUndoAlt: Ícone de seta circular utilizado para marcar uma tarefa como incompleta.
+FaEye: Ícone de olho utilizado no botão de filtro para indicar que todas as tarefas estão sendo exibidas.
+FaEyeSlash: Ícone de olho cortado utilizado no botão de filtro para indicar que apenas as tarefas concluídas estão sendo exibidas.
+Estilos
+A aplicação utiliza o arquivo TaskList.css para estilizar os componentes. O estilo inclui formatação para a tabela de tarefas, botões de ação, e o layout geral.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Aqui está um exemplo de README.md para o seu projeto:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Task List Manager
+Descrição
+Este projeto é uma aplicação simples de gerenciamento de tarefas construída com React. O usuário pode adicionar tarefas, marcar como concluídas ou incompletas, e filtrar para ver apenas as tarefas concluídas ou todas as tarefas.
 
-### `npm test`
+Funcionalidades
+Adicionar Tarefas: Permite adicionar novas tarefas à lista.
+Marcar Tarefas como Concluídas/Incompletas: Cada tarefa possui um botão para alternar seu estado entre concluída e incompleta.
+Filtrar Tarefas: Um botão permite alternar entre exibir todas as tarefas ou apenas as tarefas concluídas.
+Componentes
+TaskList
+Este é o componente principal da aplicação. Ele gerencia o estado das tarefas e a interface do usuário.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Estados
+tasks: Array de objetos que representa as tarefas. Cada tarefa tem um nome (name) e um estado de conclusão (completed).
+taskName: String que armazena o nome da tarefa que está sendo criada.
+filterCompleted: Boolean que indica se apenas tarefas concluídas devem ser exibidas.
+Funções
+addTask: Adiciona uma nova tarefa à lista de tarefas.
+toggleTaskCompletion: Alterna o estado de uma tarefa entre concluída e incompleta.
+filteredTasks: Filtra as tarefas com base no estado de filterCompleted.
+Ícones
+A aplicação utiliza a biblioteca React Icons para adicionar ícones intuitivos aos botões de ação:
 
-### `npm run build`
+FaCheck: Ícone de check utilizado para marcar uma tarefa como concluída.
+FaUndoAlt: Ícone de seta circular utilizado para marcar uma tarefa como incompleta.
+FaEye: Ícone de olho utilizado no botão de filtro para indicar que todas as tarefas estão sendo exibidas.
+FaEyeSlash: Ícone de olho cortado utilizado no botão de filtro para indicar que apenas as tarefas concluídas estão sendo exibidas.
+Estilos
+A aplicação utiliza o arquivo TaskList.css para estilizar os componentes. O estilo inclui formatação para a tabela de tarefas, botões de ação, e o layout geral.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Como Executar o Projeto
+Clone o repositório:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+git clone https://github.com/seu-usuario/task-list-manager.git
+cd task-list-manager
+Instale as dependências:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm install
+Execute o projeto:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm start
+Abra o navegador:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A aplicação estará disponível em http://localhost:3000.
+Tecnologias Utilizadas
+React: Biblioteca JavaScript para construção de interfaces de usuário.
+React Icons: Biblioteca de ícones para React.
+CSS: Para estilização da aplicação.
